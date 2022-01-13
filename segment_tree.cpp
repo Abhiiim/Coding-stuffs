@@ -47,6 +47,7 @@ void updateRec(ll idx, ll diff, ll ss, ll se, ll i){
 
 void update(ll idx, ll new_val){
     ll diff = new_val - arr[idx];
+    arr[idx] = new_val;
     updateRec(idx, diff, 0, n-1, 0);
 }
 
